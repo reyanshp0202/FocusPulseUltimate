@@ -2,7 +2,7 @@
 
 FocusPulse is a screen-fatigue break assistant for students, gamers, developers, and anyone who works online for long periods of time.
 
-Live demo: https://focus-pulse-pied.vercel.app
+Live demo: https://focus-pulse-ultimate.vercel.app/
 
 ## What It Does
 
