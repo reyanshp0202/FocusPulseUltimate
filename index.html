@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0a0f1c">
+    <title>FocusPulse - Check Engine Light for Your Brain</title>
+
+    <meta name="description" content="FocusPulse tracks your focus and fatigue like a check engine light, then coaches you on exactly when and how to recover before burnout.">
+    <link rel="icon" type="image/png" href="favicon.png">
+   
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta property="og:title" content="FocusPulse - Check Engine Light for Your Brain">
+   
+    <meta property="og:description" content="Track your focus and fatigue in real time, with a coach that tells you exactly when and how to recover before burnout.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FocusPulse - Check Engine Light for Your Brain">
+    
+    <meta name="twitter:description" content="Track your focus and fatigue in real time, with a coach that tells you exactly when and how to recover before burnout.">
+    <meta name="twitter:image" content="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="shell">
+        <header class="brand">
+            <div class="brand-mark">
+                <span class="brand-pulse" aria-hidden="true"></span>
+                <h1>FocusPulse</h1>
+            </div>
+            <p class="subtitle">Biometric &amp; Fatigue Pattern Detection Engine</p>
+        </header>
+
+        <nav class="site-tabs" aria-label="Site sections">
+            <button id="about-tab" class="site-tab active" onclick="showPage('about')">About the Project</button>
+            <button id="try-tab" class="site-tab" onclick="showPage('try')">Try It Out</button>
+        </nav>
+
+        <section id="about-page" class="about-page" aria-label="About FocusPulse">
+            <section class="about-hero">
+                <div class="about-copy">
+                    <p class="about-kicker">Human Check-Engine Light</p>
+                    <h2>Mental fatigue is easier to prevent than repair.</h2>
+                    <p>
+                        FocusPulse helps students, developers, gamers, and screen-heavy workers notice when their focus is starting to wear down. It turns fatigue into a simple green, yellow, and red signal, then recommends a short recovery break.
+                    </p>
+
+                    <div class="about-actions">
+                        <button class="btn-trigger" onclick="showPage('try')">Try FocusPulse</button>
+                    </div>
+                </div>
+
+                <div class="diagnostic-panel" aria-label="FocusPulse diagnostic model">
+                    <div class="diagnostic-core">GOOD</div>
+                    <div class="diagnostic-row">
+                        <span>Session time</span>
+                        <strong>Measures work length</strong>
+                    </div>
+                    <div class="diagnostic-row">
+                        <span>Mood check-in</span>
+                        <strong>Adds context</strong>
+                    </div>
+                    <div class="diagnostic-row">
+                        <span>Activity mode</span>
+                        <strong>Adapts timing</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-strip" aria-label="Research highlights">
+                <article>
+                    <strong>3 burnout dimensions</strong>
+                    <span>exhaustion, mental distance, and reduced efficacy according to WHO's ICD-11 description.</span>
+                </article>
+                <article>
+                    <strong>5-10 min/hour</strong>
+                    <span>HSE recommends short, frequent display-screen breaks instead of rare long breaks.</span>
+                </article>
+                <article>
+                    <strong>20-20-20</strong>
+                    <span>eye strain relief uses 20 seconds looking 20 feet away every 20 minutes of screen use.</span>
+                </article>
+            </section>
+
+            <section class="info-section" id="why-we-care">
+                <p class="about-kicker">Why it matters</p>
+                <h2>Fatigue usually builds quietly.</h2>
+                <div class="text-columns">
+                    <p>
+                        Long screen sessions can lead to tired eyes, stiff posture, slower thinking, and lower motivation. The problem is that people often do not notice those signals until their work already feels harder.
+                    </p>
+                    <p>
+                        FocusPulse makes those signals visible. Green means the session is healthy, yellow means strain is rising, and red means it is time for a reset.
+                    </p>
+                </div>
+            </section>
+
+            <section class="info-section" id="research">
+                <p class="about-kicker">Research foundation</p>
+                <h2>Built from simple, trusted wellness guidance.</h2>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <span class="about-card-tag">WHO</span>
+                        <h3>Burnout comes from unmanaged stress.</h3>
+                        <p>WHO describes burnout as an occupational issue connected to exhaustion, mental distance from work, and reduced effectiveness.</p>
+                        <a href="https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases" target="_blank" rel="noreferrer">Read WHO source</a>
+                    </article>
+                    <article class="research-card">
+                        <span class="about-card-tag">CDC / NIOSH</span>
+                        <h3>Stress affects people and performance.</h3>
+                        <p>NIOSH explains that job stress can affect worker health and the health of organizations, making prevention important.</p>
+                        <a href="https://www.cdc.gov/niosh/docs/99-101/default.html" target="_blank" rel="noreferrer">Read NIOSH source</a>
+                    </article>
+                    <article class="research-card">
+                        <span class="about-card-tag">HSE</span>
+                        <h3>Short breaks should happen regularly.</h3>
+                        <p>HSE recommends short, frequent breaks for display-screen work, such as 5-10 minutes every hour.</p>
+                        <a href="https://www.hse.gov.uk/msd/dse/work-routine.htm" target="_blank" rel="noreferrer">Read HSE source</a>
+                    </article>
+                    <article class="research-card">
+                        <span class="about-card-tag">Eye strain</span>
+                        <h3>Eyes need a distance reset.</h3>
+                        <p>The 20-20-20 rule gives the eyes a break by looking 20 feet away for 20 seconds after screen use.</p>
+                        <a href="https://www.verywellhealth.com/digital-eye-strain-11812065" target="_blank" rel="noreferrer">Read 20-20-20 source</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="info-section" id="features">
+                <p class="about-kicker">Features</p>
+                <h2>What FocusPulse does.</h2>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <span class="about-card-tag">Detect</span>
+                        <h3>Fatigue Index</h3>
+                        <p>Turns session time and mood into a simple percentage so users can see their focus load.</p>
+                    </article>
+                    <article class="about-card">
+                        <span class="about-card-tag">Adapt</span>
+                        <h3>Activity Modes</h3>
+                        <p>Adjusts break timing for studying, coding, gaming, reading, creative writing, and normal work.</p>
+                    </article>
+                    <article class="about-card">
+                        <span class="about-card-tag">Recover</span>
+                        <h3>Recovery Protocols</h3>
+                        <p>Recommends breathing, stretching, or eye-rest exercises when the user needs a reset.</p>
+                    </article>
+                    <article class="about-card">
+                        <span class="about-card-tag">Demo</span>
+                        <h3>Judge Mode</h3>
+                        <p>Shortens the timing so the full experience can be shown quickly during judging.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="info-section" id="how-it-works">
+                <p class="about-kicker">How it works</p>
+                <h2>A simple four-step flow.</h2>
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <h3>Start a session</h3>
+                        <p>The user starts instantly, with optional health context if they want it.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <h3>Select an activity</h3>
+                        <p>The app adapts timing for studying, coding, gaming, reading, or writing.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <h3>Watch the signal</h3>
+                        <p>The diagnostic light changes as fatigue increases.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">04</span>
+                        <h3>Complete a reset</h3>
+                        <p>The user completes a short recovery exercise and gets a reset summary.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="info-section" id="recovery-info">
+                <p class="about-kicker">Recovery science</p>
+                <h2>Breaks are short and focused.</h2>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <span class="about-card-tag">Breath</span>
+                        <h3>Square Breathing</h3>
+                        <p>A simple inhale, hold, exhale, hold pattern to slow down and reset.</p>
+                    </article>
+                    <article class="about-card">
+                        <span class="about-card-tag">Stretch</span>
+                        <h3>Neck and Spine Reset</h3>
+                        <p>Quick movement breaks help interrupt long static posture.</p>
+                    </article>
+                    <article class="about-card">
+                        <span class="about-card-tag">Focus</span>
+                        <h3>20-20-20 Rule</h3>
+                        <p>Looking away from the screen helps reduce eye strain during long sessions.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="info-section" id="activity-modes-info">
+                <p class="about-kicker">Activity modes</p>
+                <h2>Different activities need different breaks.</h2>
+                <div class="mode-table">
+                    <div><span>Normal Work</span><strong>Hourly reset with balanced recovery</strong></div>
+                    <div><span>Studying</span><strong>Shorter focus blocks with breathing support</strong></div>
+                    <div><span>Coding</span><strong>Longer blocks with posture and stretch resets</strong></div>
+                    <div><span>Gaming</span><strong>Hourly screen reset with eye relief</strong></div>
+                    <div><span>Reading</span><strong>Visual recovery and eye strain prevention</strong></div>
+                    <div><span>Creative Writing</span><strong>Mental reset for sustained idea generation</strong></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="try-page" class="dashboard" aria-label="Focus dashboard" hidden>
+            <div class="gauge">
+                <div class="gauge-bezel">
+                    <div class="gauge-ticks" aria-hidden="true"></div>
+                    <div id="light" class="engine-light">GOOD</div>
+                </div>
+            </div>
+
+            <div id="status" class="status-text">Feeling Focused</div>
+            <div id="event-message" class="event-message" aria-live="polite"></div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Session Time</div>
+                    <div id="timer-val" class="stat-value">00:00</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Fatigue Index</div>
+                    <div id="fatigue-val" class="stat-value">0%</div>
+                </div>
+            </div>
+
+            <div class="mode-card">
+                <div>
+                    <div class="stat-label">Activity Mode</div>
+                    <div id="activity-mode-display" class="mode-value">Normal Work</div>
+                </div>
+                <div id="activity-mode-focus" class="mode-focus">Balanced recovery</div>
+            </div>
+
+            <section class="mood-inline" aria-label="Optional health check-in">
+                <div>
+                    <div class="stat-label">Optional Health</div>
+                    <div id="mood-display" class="mode-value">Okay</div>
+                </div>
+                <div class="mood-inline-actions">
+                    <button id="mood-normal" class="mood-chip" onclick="selectMood('Normal')">Normal</button>
+                    <button id="mood-okay" class="mood-chip active" onclick="selectMood('Okay')">Okay</button>
+                    <button id="mood-stressed" class="mood-chip" onclick="selectMood('Stressed')">Stressed</button>
+                    <button id="mood-tired" class="mood-chip" onclick="selectMood('Tired')">Tired</button>
+                </div>
+            </section>
+
+            <section class="coach" aria-label="Focus Coach" aria-live="polite">
+                <div class="coach-head">
+                    <span class="coach-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.1 2.5 5.5.6.7.9 1.2 1 2l.1 1h6.6l.1-1c.1-.8.4-1.3 1-2C18.8 13.1 20 11.4 20 9a7 7 0 0 0-7-7Z"></path>
+                            <path d="M9 21h6"></path>
+                            <path d="M10 18h4"></path>
+                        </svg>
+                    </span>
+                    <div class="coach-head-text">
+                        <span class="coach-kicker">Focus Coach</span>
+                        <span id="coach-state" class="coach-state">Standing by</span>
+                    </div>
+                    <span id="coach-eta" class="coach-eta"></span>
+                </div>
+                <p id="coach-advice" class="coach-advice">Start a session and I&apos;ll monitor your fatigue patterns in real time.</p>
+                <div id="coach-rec" class="coach-rec" hidden>
+                    <span class="coach-rec-label">Recommended reset</span>
+                    <span id="coach-rec-value" class="coach-rec-value"></span>
+                    <span id="coach-rec-reason" class="coach-rec-reason"></span>
+                </div>
+            </section>
+
+            <button id="begin-button" class="btn-trigger" onclick="beginSession()">Begin</button>
+
+            <div class="demo-hint">
+                <span class="demo-arrow" aria-hidden="true">&darr;</span>
+                <span>Demo Mode is very short to show you how it works.</span>
+            </div>
+
+            <div class="control-row">
+                <button id="demo-button" class="control-button" onclick="toggleDemoMode()">Enable Demo Mode</button>
+                <button id="recovery-log-button" class="control-button" onclick="toggleRecoveryLog()">Recovery Log</button>
+                <button class="control-button" onclick="openSettings()">Settings</button>
+            </div>
+        </section>
+
+        <section id="recovery-log" class="recovery-log" aria-label="Recovery history" hidden>
+            <h2 class="recovery-log-title">Recovery Log</h2>
+            <ul id="recovery-list" class="recovery-list"></ul>
+        </section>
+    </main>
+
+    <div id="settings-screen" class="settings-overlay">
+        <div class="settings-panel">
+            <h2>Settings</h2>
+
+            <label>
+                <span class="setting-label-row">
+                    Activity Mode
+                </span>
+                <select id="activity-mode-setting" onchange="previewActivityMode()">
+                    <option value="Normal Work">Normal Work</option>
+                    <option value="Studying">Studying</option>
+                    <option value="Coding">Coding</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Creative Writing">Creative Writing</option>
+                </select>
+            </label>
+
+            <div class="unit-toggle" aria-label="Time unit setting">
+                <span>Measure time in</span>
+                <button id="unit-toggle-button" class="btn-secondary compact-button" onclick="toggleTimeUnit()">Minutes</button>
+            </div>
+
+            <label>
+                <span class="setting-label-row">
+                    Yellow Time
+                    <span class="setting-unit time-unit-label">in minutes</span>
+                </span>
+                <input id="yellow-setting" type="number" min="1" value="45">
+            </label>
+
+            <label>
+                <span class="setting-label-row">
+                    Red Time
+                    <span class="setting-unit time-unit-label">in minutes</span>
+                </span>
+                <input id="red-setting" type="number" min="2" value="55">
+            </label>
+
+            <label>
+                <span class="setting-label-row">
+                    Break Start
+                    <span class="setting-unit time-unit-label">in minutes</span>
+                </span>
+                <input id="break-setting" type="number" min="3" value="60">
+            </label>
+
+            <label>
+                <span class="setting-label-row">
+                    Break Length
+                    <span class="setting-unit time-unit-label">in minutes</span>
+                </span>
+                <input id="break-length-setting" type="number" min="1" value="5">
+            </label>
+
+            <label>
+                <span class="setting-label-row">
+                    Preferred Break Type
+                </span>
+                <select id="break-type-setting">
+                    <option value="Random">Random</option>
+                    <option value="Breathing">Breathing</option>
+                    <option value="Stretch">Stretch</option>
+                    <option value="Eye Relief">Eye Relief</option>
+                </select>
+            </label>
+
+            <div class="settings-actions">
+                <button class="btn-secondary" onclick="closeSettings()">Cancel</button>
+                <button class="btn-trigger" onclick="saveSettings()">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="break-screen" class="break-overlay">
+        <h1 id="break-title">Break Needed</h1>
+        <p id="break-start-message" class="break-start-message"></p>
+        <p id="break-instructions"></p>
+        <div id="break-visual" class="break-visual">REST</div>
+        <div id="break-timer">20</div>
+        <button id="exercise-start-button" class="btn-trigger break-start-button" onclick="startBreakExercise()">Start Exercise</button>
+    </div>
+
+    <div id="recovery-screen" class="recovery-overlay">
+        <div class="recovery-panel">
+            <div class="recovery-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+            </div>
+            <h1>System Reset Complete</h1>
+            <ul class="recovery-summary">
+                <li><span>Exercise Completed</span><span id="recovery-exercise" class="recovery-summary-val"></span></li>
+                <li><span>Session Time</span><span id="recovery-session-time" class="recovery-summary-val"></span></li>
+                <li><span>Fatigue Before Break</span><span id="recovery-fatigue-before" class="recovery-summary-val"></span></li>
+                <li><span>Fatigue After Break</span><span id="recovery-fatigue-after" class="recovery-summary-val recovery-summary-good">0%</span></li>
+            </ul>
+            <button class="btn-trigger" onclick="closeRecoveryScreen()">Done</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
